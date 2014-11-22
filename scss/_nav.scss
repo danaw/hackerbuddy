@@ -1,0 +1,92 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	z-index: 999;
+}
+
+.logo {
+	float: left;
+	font-family: $font-primary;
+	text-transform: uppercase;
+	text-align: center;
+	a {
+		color: $grey3;
+		font-size: 22px;
+		font-weight: 400;
+	}
+}
+
+nav ul {
+	float: right;
+	text-align: right;
+	width: 100px;
+	padding: 0;
+}
+nav ul li {
+	display: inline;
+	position: relative;
+	padding: 0 25px;
+}
+nav ul li ul {
+	background: #FFF;
+	color: $grey5;
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	padding-left: 0;
+	li {
+		padding: 10px 25px;
+	}
+}
+nav ul li:hover ul {
+	display: block;
+}
+nav ul li ul li {
+				display: list-item; /* Set the sub navs list items back */
+			}
+
+
+			#nav-toggle {
+				float: right;
+			}
+
+			#nav-toggle {
+				cursor: pointer;
+				padding: 0 0 0 0;
+			}
+
+			#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+				cursor: pointer;
+				border-radius: 1px;
+				height: 3px;
+				width: 25px;
+				background: #DDD;
+				position: absolute;
+				display: block;
+				content: '';
+			}
+			#nav-toggle span:before {
+				top: -8px;
+			}
+			#nav-toggle span:after {
+				bottom: -8px;
+			}
+
+			#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+				transition: all 500ms ease-in-out;
+			}
+			#nav-toggle.active span {
+				background-color: transparent;
+			}
+			#nav-toggle.active span:before, #nav-toggle.active span:after {
+				top: 0;
+			}
+			#nav-toggle.active span:before {
+				transform: rotate(45deg);
+			}
+			#nav-toggle.active span:after {
+				transform: rotate(-45deg);
+			}

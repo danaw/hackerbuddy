@@ -1,0 +1,78 @@
+/*
+Theme Name: Dana Werpny - Personal Portfolio
+Theme URI: http://danawerpny.com;
+Description: The personal portfolio of Dana Werpny - Front-End Developer from Toronto, Canada
+Version: 1.0
+Author: Dana
+Author URI: http://danawerpny.com
+*/
+
+// RESPONSIVE MUMBO JUMBO
+
+@-ms-viewport{
+  width: device-width;
+}
+
+// SASS MIXINS
+
+$color-primary: rgb(72,209,204);
+$color-secondary: #CDF7F4;
+$grey1: #666;
+$grey2: #888;
+$grey3: #AAA;
+$grey4: #CCC;
+$grey5: #DDD;
+$grey5: #EEE;
+$font-primary: 'Roboto', 'Sans-serif';
+$font-secondary: 'Rouge Script', 'Cursive';
+
+/* FONT IMPORTS */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700);
+
+@import url(http://fonts.googleapis.com/css?family=Lily+Script+One);
+
+@import url(http://fonts.googleapis.com/css?family=Niconne);
+
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script);
+
+@import url(http://fonts.googleapis.com/css?family=Sevillana);
+
+/* CSS3 ANIMATIONS */
+
+@import "_animations.scss";
+
+// HEADER
+
+@import "_header.scss";
+
+/* NAV */
+@import "_nav.scss";
+
+/* BASE STYLES */
+
+@import "_base.scss";
+
+/* FRONT PAGE STYLES */
+
+@import "_front.scss";
+
+/* PORTFOLIO STYLES */
+
+@import "_portfolio.scss";
+
+/* SINGLE PORTFOLIO STYLES */
+
+@import "_portsingle.scss";
+
+/* SINGLE BLOG STYLE */
+
+@import "_blog.scss";
+
+/* CONTACT PAGE STYLE */
+
+@import "_contact.scss";
